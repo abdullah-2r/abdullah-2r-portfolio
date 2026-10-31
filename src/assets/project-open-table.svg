@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="37" y1="15" x2="684" y2="454" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E1EAF0"/>
+      <stop offset="1" stop-color="#CDDBE4"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="194" y1="61" x2="531" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#F8FBFC"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h720v460H0z"/>
+  <circle cx="574" cy="85" r="112" fill="#fff" fill-opacity=".3"/>
+  <circle cx="124" cy="372" r="128" fill="#92ACBD" fill-opacity=".19"/>
+  <path stroke="#fff" stroke-opacity=".8" d="M40 324c113-97 186-104 297-80 112 24 217-21 336-120"/>
+  <rect x="130" y="56" width="460" height="348" rx="20" fill="url(#panel)" stroke="#fff" stroke-width="3"/>
+  <path stroke="#E5EBEF" d="M130 103h460"/>
+  <circle cx="158" cy="80" r="5" fill="#9BB0BE"/>
+  <circle cx="175" cy="80" r="5" fill="#C1CFD8"/>
+  <circle cx="192" cy="80" r="5" fill="#DFE7EC"/>
+  <rect x="165" y="128" width="82" height="10" rx="5" fill="#6E93A8"/>
+  <rect x="165" y="151" width="206" height="20" rx="10" fill="#334751"/>
+  <rect x="165" y="186" width="390" height="7" rx="3.5" fill="#E6EBEF"/>
+  <rect x="165" y="210" width="116" height="136" rx="10" fill="#F0F4F6"/>
+  <rect x="302" y="210" width="116" height="136" rx="10" fill="#EAF0F3"/>
+  <rect x="439" y="210" width="116" height="136" rx="10" fill="#F0F4F6"/>
+  <rect x="176" y="222" width="94" height="74" rx="7" fill="#C9D8E0"/>
+  <circle cx="223" cy="258" r="25" fill="#91ADBC"/>
+  <rect x="313" y="222" width="94" height="74" rx="7" fill="#D5E0E6"/>
+  <path d="M338 278c7-30 18-42 27-42s21 12 27 42" fill="#9CB6C4"/>
+  <rect x="450" y="222" width="94" height="74" rx="7" fill="#C9D8E0"/>
+  <circle cx="497" cy="259" r="24" fill="#7F9EAE"/>
+  <rect x="176" y="308" width="53" height="6" rx="3" fill="#879BA6"/>
+  <rect x="176" y="321" width="72" height="6" rx="3" fill="#D3DDE2"/>
+  <rect x="313" y="308" width="53" height="6" rx="3" fill="#879BA6"/>
+  <rect x="313" y="321" width="72" height="6" rx="3" fill="#D3DDE2"/>
+  <rect x="450" y="308" width="53" height="6" rx="3" fill="#879BA6"/>
+  <rect x="450" y="321" width="72" height="6" rx="3" fill="#D3DDE2"/>
+</svg>
