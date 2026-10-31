@@ -177,7 +177,6 @@ For other hosts (Vercel, GitHub Pages, etc.), configure an equivalent rewrite ru
 | | |
 |---|---|
 | **Email** | [abdullahalnaeem37@gmail.com](mailto:abdullahalnaeem37@gmail.com) |
-| **Phone** | [+8801953148652](tel:+8801953148652) |
 | **GitHub** | [@abdullah-2r](https://github.com/abdullah-2r) |
 | **LinkedIn** | [naeem-abdullah](https://www.linkedin.com/in/naeem-abdullah) |
 
