@@ -6,7 +6,7 @@ A dark-themed, single-page developer portfolio built with React 19 and Vite. It 
 
 ## 🚀 Live Site
 
-> _Deploy URL goes here — update once published._
+> https://abdullah-2r-portfolio.vercel.app/
 
 ---
 
