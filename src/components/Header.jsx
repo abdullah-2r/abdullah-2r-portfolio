@@ -17,6 +17,22 @@ export default function Header() {
   const [atTop, setAtTop] = useState(true)
   const closeMenu = () => setMenuOpen(false)
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [menuOpen])
+
+  // Close menu on Escape key
+  useEffect(() => {
+    if (!menuOpen) return
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') closeMenu()
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [menuOpen])
+
   useEffect(() => {
     const sections = navLinks
       .map(([, href]) => document.querySelector(href))

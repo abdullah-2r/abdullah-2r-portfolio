@@ -84,7 +84,7 @@ export default function About() {
               <ul className="flex flex-wrap gap-2">
                 {['Clean code', 'Performance mindset', 'Accessibility', 'Component architecture'].map((principle) => (
                   <li
-                    className="cursor-pointer rounded-lg border border-white/10 bg-white/[0.03] px-3 py-2 font-mono text-[10px] text-muted transition-colors hover:border-white/30 hover:text-ink"
+                    className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-2 font-mono text-[10px] text-muted transition-colors hover:border-white/30 hover:text-ink"
                     key={principle}
                   >
                     {principle}
@@ -100,12 +100,12 @@ export default function About() {
                 Live status
               </p>
               <h3 className="mb-5 font-display text-[22.4px] font-bold leading-[1.15] tracking-[-0.03em] text-ink">
-                Timezone &amp; Location
+                Timezone & Location
               </h3>
               <div className="mb-5 flex min-h-[86px] flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#15141c]/70 px-4 py-4 sm:px-6">
                 <span className="inline-flex items-center gap-3 font-mono text-xl font-medium tracking-[0.06em] text-ink sm:gap-4 sm:text-2xl sm:tracking-[0.08em]">
                   <FiClock className="shrink-0 text-purple" aria-hidden="true" />
-                  <time>{localTime}</time>
+                  <time dateTime={new Date().toISOString()}>{localTime}</time>
                 </span>
                 <span className="rounded-full bg-purple-soft px-3 py-1 font-mono text-[10px] font-medium text-purple-dark">
                   GMT+6

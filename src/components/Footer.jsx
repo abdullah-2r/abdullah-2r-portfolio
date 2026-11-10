@@ -58,7 +58,7 @@ export default function Footer() {
             <ul className="flex flex-wrap gap-2">
               {technologies.map((technology) => (
                 <li
-                  className="cursor-pointer rounded-lg border border-white/10 bg-white/[0.03] px-3 py-2 font-mono text-[10px] text-muted transition-colors hover:border-white/30 hover:text-ink"
+                  className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-2 font-mono text-[10px] text-muted transition-colors hover:border-white/30 hover:text-ink"
                   key={technology}
                 >
                   {technology}

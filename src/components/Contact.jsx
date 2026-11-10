@@ -13,9 +13,11 @@ export default function Contact() {
     try {
       await navigator.clipboard.writeText(contact.email)
       setCopyStatus('Email copied')
+      setTimeout(() => setCopyStatus(''), 2500)
     } catch (error) {
       console.error('Unable to copy email address:', error)
       setCopyStatus('Could not copy email. Select the address to copy it.')
+      setTimeout(() => setCopyStatus(''), 4000)
     }
   }
 
@@ -29,6 +31,7 @@ export default function Contact() {
     const body = encodeURIComponent(`From: ${name} (${email})\n\n${message}`)
 
     window.location.href = `mailto:${contact.email}?subject=${subject}&body=${body}`
+    event.currentTarget.reset()
   }
 
   return (

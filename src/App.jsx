@@ -24,7 +24,7 @@ export default function App() {
   const defaultTitle = useRef(document.title)
   const projectSlug = pathname.match(/^\/projects\/([^/]+)\/?$/)?.[1]
   const project = projectSlug ? getProjectBySlug(projectSlug) : null
-  const isProjectPage = Boolean(project)
+  const isProjectPage = Boolean(projectSlug)
 
   useEffect(() => {
     const handlePopState = () => {
@@ -37,7 +37,7 @@ export default function App() {
 
     window.addEventListener('popstate', handlePopState)
     return () => window.removeEventListener('popstate', handlePopState)
-  }, [])
+  }, [pathname])
 
   useLayoutEffect(() => {
     if (hash) {
@@ -75,7 +75,10 @@ export default function App() {
       return
     }
 
-    if (destination.pathname === window.location.pathname) return
+    if (destination.pathname === window.location.pathname) {
+      setHash(destination.hash)
+      return
+    }
 
     event.preventDefault()
     const destinationProjectSlug = destination.pathname.match(/^\/projects\/([^/]+)\/?$/)?.[1]
@@ -138,7 +141,7 @@ export default function App() {
       observer.disconnect()
       root.classList.remove('motion-ready')
     }
-  }, [])
+  }, [pathname])
 
   return (
     <div
@@ -150,7 +153,7 @@ export default function App() {
       <div
         data-theme="dark"
         className={`flex min-h-screen flex-col bg-[#15141c] font-sans text-ink ${isProjectPage ? 'hidden' : ''}`}
-        aria-hidden={isProjectPage}
+        aria-hidden={isProjectPage || undefined}
       >
         <Header />
         <main className="flex-1">
